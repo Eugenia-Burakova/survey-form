@@ -1,0 +1,59 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 2;
+    color: rgb(28, 28, 71);
+    text-shadow: 1px 1px 2px white;
+    margin: 0;
+    background: url("https://images.ctfassets.net/mviowpldu823/3DjsfDKUSWQBfdWMEbecCQ/24f09c374ddb299ee332352fd69e4042/SES-Computer-Science-1900862161.jpg")
+}
+
+h1 {
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+    margin: 10px;
+}
+
+#description {
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+form {
+    width: 600px;
+    margin: auto;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown {
+    width: 600px;
+}
+
+.recommend,
+.improved {
+    display: flex;
+    flex-direction: column;
+}
+
+#textarea {
+    width: 600px;
+    height: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#submit {
+    width: 600px;
+    height: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}

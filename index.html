@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 id="title">EasyCoding Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+    <form id="survey-form">
+        <div class="info">
+            <label id="name-label">Name</label>
+            <input id="name" type="text" placeholder="Enter your name" required>
+
+            <label id="email-label">Email</label>
+            <input id="email" type="email" placeholder="Enter your email" required>
+
+            <label id="number-label">Age</label>
+            <input id="number" type="number" placeholder="Age" min=18 max=99>
+        </div>
+
+        <div class="role">
+            <p>Which option best describes your current role?</p>
+            <select class="dropdown" required>
+                <option value="" disabled selected hidden>Select current role</option>
+                <option value="student">Student</option>
+                <option value="learner">Learner</option>
+                <option value="full-time-job">Full-time job</option>
+                <option value="mentor">Mentor</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div class="recommend">
+            <p>Would you recommend EasyCoding to a friend?</p>
+            <label for="definitely">
+                <input id="definitely" value="definitely" type="radio" name="recommend">Definitely
+            </label>
+
+            <label for="maybe">
+                <input id="maybe" value="maybe" type="radio" name="recommend">Maybe
+            </label>
+
+            <label for="not-sure">
+                <input id="not-sure" value="not-sure" type="radio" name="recommend">Not sure
+            </label>
+        </div>
+
+        <div class="fav-feature">
+            <p>What is your favorite feature of EasyCoding?</p>
+            <select class="dropdown" required>
+                <option value="" disabled selected hidden>Select an option</option>
+                <option value="challenges">Challenges</option>
+                <option value="projects">Projects</option>
+                <option value="community">Community</option>
+                <option value="courses">Courses</option>
+                <option value="open-source">Open Source</option>
+            </select>
+        </div>
+
+        <div class="improved">
+            <p>What would you like to see improved? (Check all that apply)</p>
+            <label for="frontend">
+                <input id="frontend" value="frontend" type="checkbox" name="frontend">Front-end projects
+            </label>
+
+            <label for="backend">
+                <input id="backend" value="backend" type="checkbox" name="backend">Back-end projects
+            </label>
+
+            <label for="data">
+                <input id="data" value="data" type="checkbox" name="data">Data Visualization
+            </label>
+
+            <label for="open-source">
+                <input id="open-source" value="open-source" type="checkbox" name="open-source">Open Source Community
+            </label>
+
+            <label for="forum">
+                <input id="forum" value="forum" type="checkbox" name="forum">Forum
+            </label>
+        </div>
+
+        <textarea id="textarea" name="textarea" placeholder="Enter your comment here..."></textarea>
+
+        <button id="submit" type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
